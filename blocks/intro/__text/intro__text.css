@@ -7,3 +7,9 @@
   line-height: 163%;
   font-weight: 400;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro__text {
+    max-width: 720px;
+  }
+}

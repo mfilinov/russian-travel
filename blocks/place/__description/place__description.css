@@ -1,4 +1,4 @@
-.place__article {
+.place__description {
   min-width: 288px;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .place__article {
+  .place__description {
     padding: 0 16px;
   }
 }

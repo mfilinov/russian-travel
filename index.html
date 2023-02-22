@@ -12,10 +12,10 @@
   <!-- начало шапки сайта, блок header -->
   <header class="header">
     <img src="./images/header-logo.svg" alt="Лого" class="header__logo">
-    <div class="header__lang-links">
-      <a href="#" class="header__lang-link">Ru</a>
-      <a href="#" class="header__lang-link header__lang-link_underline_none">En</a>
-    </div>
+    <ul class="header__lang-links list">
+      <li><a href="#" class="header__lang-link link-opacity header__lang-link_active">Ru</a></li>
+      <li><a href="#" class="header__lang-link link-opacity">En</a></li>
+    </ul>
   </header>
   <!-- конец шапки сайта, блок header -->
 
@@ -24,8 +24,10 @@
     <section class="lead">
       <h1 class="lead__title">Путешествия по&nbsp;России</h1>
       <p class="lead__subtitle">Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.</p>
-      <img src="./images/lead-polka.jpg" alt="Изображения полки в вагоне" class="lead__image">
-      <p class="lead__caption">ваша полка — верхняя</p>
+      <figure class="lead__figure">
+        <img src="./images/lead-polka.jpg" alt="Изображения полки в вагоне" class="lead__image">
+        <figcaption class="lead__caption">ваша полка — верхняя</figcaption>
+      </figure>
     </section>
 
     <section class="intro">
@@ -38,19 +40,11 @@
         детей, усадила их&nbsp;в&nbsp;свою &laquo;Ладу&raquo; и&nbsp;проехала 20&nbsp;тысяч километров по&nbsp;родной
         стране. Мы&nbsp;выбрали и&nbsp;описали некоторые интересные места, достойные вашего отпуска.</p>
       <ul class="intro__list list">
-        <li class="intro__list-item"><span class="intro__list-item intro__list-item_weight_m">Часовых поясов</span> 11
-        </li>
-        <li class="intro__list-item"><span class="intro__list-item intro__list-item_weight_m">Объектов природного наследия ЮНЕСКО</span>
-          12
-        </li>
-        <li class="intro__list-item"><span class="intro__list-item intro__list-item_weight_m">Объектов культурного наследия ЮНЕСКО</span>
-          16
-        </li>
-        <li class="intro__list-item"><span
-          class="intro__list-item intro__list-item_weight_m">Природных заповедников</span>
-          105
-        </li>
-        <li class="intro__list-item"><span class="intro__list-item intro__list-item_weight_m">Аэропортов</span> 241</li>
+        <li>Часовых поясов <span class="intro__list-span">11</span></li>
+        <li>Объектов природного наследия ЮНЕСКО <span class="intro__list-span">12</span></li>
+        <li>Объектов культурного наследия ЮНЕСКО <span class="intro__list-span">16</span></li>
+        <li>Природных заповедников <span class="intro__list-span">105</span></li>
+        <li>Аэропортов <span class="intro__list-span">241</span></li>
       </ul>
     </section>
 
@@ -78,7 +72,7 @@
             <a href="http://park-kosa.ru" target="_blank" class="place__link link-opacity">park-kosa.ru</a>
           </div>
           <img src="./images/place-kosa.jpg" alt="Изображение Куршская коса" class="place__image">
-          <article class="place__article">
+          <div class="place__description">
             <p class="place__paragraph">Здесь, посреди лесов и&nbsp;песчаных дюн, вы&nbsp;сможете увидеть два водных
               горизонта&nbsp;&mdash; спокойного Куршского залива с&nbsp;одной стороны и&nbsp;подёрнутого рябью волн
               Балтийского моря с&nbsp;другой. Уникальная природная зона на&nbsp;краю российского анклава.</p>
@@ -86,7 +80,7 @@
               и&nbsp;исследователя там&nbsp;же по&nbsp;соседству&nbsp;&mdash; самая западная точка России, Балтийская
               коса,&nbsp;&mdash; и&nbsp;немецкое наследие россыпи небольших приморских городов. Атмосфера здешних мест
               исключает суету, окуная в&nbsp;спокойствие природы и&nbsp;запах стального, прохладного моря.</p>
-          </article>
+          </div>
         </li>
         <li class="place">
           <h2 class="place__title">Кольский</h2>
@@ -96,7 +90,7 @@
                class="place__link link-opacity">National Geographic</a>
           </div>
           <img src="./images/place-kolsky.jpg" alt="Изображение Кольский полуостров" class="place__image">
-          <article class="place__article">
+          <div class="place__description">
             <p class="place__paragraph">Почти весь полуостров находится за&nbsp;Полярным кругом. Саамская тундра, от&nbsp;которой
               на&nbsp;юг&nbsp;&mdash;
               тайга, а&nbsp;на&nbsp;север&nbsp;&mdash; Ледовитый океан, прикидывающийся Баренцевым морем.</p>
@@ -106,7 +100,7 @@
               сверхглубокой скважиной, а&nbsp;от&nbsp;апатитов вас давно накрывает апатия. Но&nbsp;ваша мечта увидеть
               северное сияние начинает сбываться с&nbsp;билетом
               в&nbsp;Мурманск.</p>
-          </article>
+          </div>
         </li>
         <li class="place">
           <h2 class="place__title">Алтай</h2>
@@ -115,7 +109,7 @@
             <a href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" target="_blank" class="place__link link-opacity">YouTube</a>
           </div>
           <img src="./images/place-altai.jpg" alt="Изображение Алтай" class="place__image">
-          <article class="place__article">
+          <div class="place__description">
             <p class="place__paragraph">Алтай&nbsp;&mdash; одно из&nbsp;красивейших мест в&nbsp;России.
               В&nbsp;первую очередь из-за гор: если ехать вдоль хребта, вы&nbsp;увидите склоны, усыпанные соснами,
               горные реки и&nbsp;озёра. А&nbsp;если вы&nbsp;откроете в&nbsp;автомобиле окна, сможете познакомиться с&nbsp;невидимым
@@ -123,7 +117,7 @@
             <p class="place__paragraph">Климат на&nbsp;Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы&nbsp;увидите
               всё разнообразие местной флоры и&nbsp;фауны. По&nbsp;лесам Алтая бродят лоси, над хребтами летают орлы, а&nbsp;на&nbsp;равнинах
               пасутся косули. И&nbsp;знаменитые манулы&nbsp;&mdash; тоже обитатели Алтайского края.</p>
-          </article>
+          </div>
         </li>
         <li class="place">
           <h2 class="place__title">Зимний Байкал</h2>
@@ -132,7 +126,7 @@
             <a href="https://vk.com/baikalmile" target="_blank" class="place__link link-opacity">https://vk.com/baikalmile</a>
           </div>
           <img src="./images/place-winter-baikal.jpg" alt="Изображение Зимний байкал" class="place__image">
-          <article class="place__article">
+          <div class="place__description">
             <p class="place__paragraph">Всем известен Байкал как крупнейшее озеро в&nbsp;мире. Многие также знают, что
               это самый большой источник пресной воды и&nbsp;одно из&nbsp;красивейших мест в&nbsp;России.</p>
             <p class="place__paragraph">Конечно, это всё так. Но&nbsp;Байкал ещё идеальное место для соревнований по&nbsp;скийорингу.
@@ -140,7 +134,7 @@
               можно б&oacute;льшую скорость на&nbsp;льду. В&nbsp;марте
               2019 года на&nbsp;фестивале &laquo;Байкальская миля&raquo; был поставлен мировой рекорд&nbsp;&mdash;
               197.011&nbsp;км/ч.</p>
-          </article>
+          </div>
         </li>
         <li class="place">
           <h2 class="place__title">Карелия</h2>
@@ -149,7 +143,7 @@
             <a href="http://vodlozero.ru" target="_blank" class="place__link link-opacity">http://vodlozero.ru/</a>
           </div>
           <img src="./images/place-karelia.jpg" alt="Изображение Карелия" class="place__image">
-          <article class="place__article">
+          <div class="place__description">
             <p class="place__paragraph">Сибирь заканчивается не&nbsp;на&nbsp;Урале, а&nbsp;в&nbsp;Карелии: образующая
               тайгу сибирская лиственница не&nbsp;растёт западнее Водлозера. Зато здесь она вымахивает на&nbsp;30&nbsp;метров&nbsp;&mdash;
               леса карельских национальных парков из-за непроходимых болот никогда не&nbsp;знали топора. Некоторым
@@ -157,7 +151,7 @@
               увидал его Иван Грозный. В&nbsp;девственном лесу на&nbsp;сотню километров не&nbsp;встретишь тропы. А&nbsp;на&nbsp;редких
               тропинках деревья в&nbsp;паре метров от&nbsp;земли помечены медвежьими когтями. Чтобы все знали, кто тут
               хозяин.</p>
-          </article>
+          </div>
         </li>
       </ul>
     </section>
