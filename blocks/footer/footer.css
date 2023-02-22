@@ -1,15 +1,15 @@
-.header {
+.footer {
   margin: 0 auto;
-  padding: 28px 16px 0 16px;
+  padding: 92px 16px 24px 16px;
   max-width: 1184px;
-  max-height: 52px;
   display: flex;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
-  .header {
-    padding-top: 16px;
-    min-height: 42px;
+  .footer {
+    padding-top: 64px;
+    flex-direction: column;
+    gap: 48px;
   }
 }

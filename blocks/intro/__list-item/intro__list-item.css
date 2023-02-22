@@ -1,0 +1,8 @@
+.intro__list-item {
+  max-width: 690px;
+  min-width: 288px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+}

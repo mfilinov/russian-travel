@@ -1,0 +1,11 @@
+.places__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  .places__list {
+    row-gap: 50px;
+  }
+}

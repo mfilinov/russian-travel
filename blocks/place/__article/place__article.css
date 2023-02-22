@@ -1,0 +1,12 @@
+.place__article {
+  min-width: 288px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+@media screen and (max-width: 767px) {
+  .place__article {
+    padding: 0 16px;
+  }
+}

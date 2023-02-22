@@ -1,0 +1,31 @@
+.cover__link {
+  min-height: 740px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 1279px) {
+  .cover__link {
+    min-height: 640px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .cover__link {
+    min-height: 480px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cover__link {
+    min-height: 200px;
+    gap: 16px;
+  }
+}
